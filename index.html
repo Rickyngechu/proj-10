@@ -31,7 +31,7 @@
   <body>
     <section class="hero-section bg-Very-Pale-Cyan py-7">
       <div class="cont max-w-7xl w-[95%] mx-auto">
-        <div class="header relative">
+        <div class="header relative max-w-sm mx-auto laptop:max-w-7xl">
           <nav class="nav-cont flex justify-between items-center py-2 mb-10">
             <img src="images/logo.svg" alt="Logo" class="logo h-5" />
             <a
@@ -41,9 +41,11 @@
             >
           </nav>
 
-          <div class="hero-det p-5 text-center">
-            <div class="hero-content mb-10">
-              <h1 class="hero-heading mb-5 text-Very-Dark-Cyan">
+          <div
+            class="hero-det p-5 text-center laptop:text-left laptop:flex laptop:items-center laptop:gap-6"
+          >
+            <div class="hero-content mb-10 laptop:w-1/2">
+              <h1 class="hero-heading mb-5 text-Very-Dark-Cyan laptop:text-4xl">
                 Build The Community Your Fans Will Love
               </h1>
 
@@ -55,12 +57,12 @@
 
               <a
                 href="#"
-                class="btn py-2 px-9 btn-getstarted bg-Pink text-[#fff] text-sm"
+                class="btn py-2 px-9 btn-getstarted bg-Pink text-[#fff] text-sm laptop:hover:opacity-80"
                 >Get Started For Free</a
               >
             </div>
 
-            <div class="img">
+            <div class="img laptop:w-2/3">
               <img src="images/illustration-mockups.svg" alt="mockups" />
             </div>
           </div>
@@ -70,16 +72,16 @@
 
     <section class="grow-section py-16">
       <div class="cont max-w-7xl w-[95%] mx-auto">
-        <div class="grow rounded-lg text-center p-6">
-          <div class="img mb-14">
+        <div
+          class="grow rounded-lg text-center p-6 max-w-sm mx-auto laptop:max-w-7xl laptop:flex laptop:items-center laptop:text-left"
+        >
+          <div class="img mb-14 laptop:mb-0 laptop:order-1">
             <img src="images/illustration-grow-together.svg" alt="Grow-img" />
           </div>
-          <div class="grow-txt">
-            <h2 class="sub-heading text-Very-Dark-Cyan font-bold text-lg mb-4">
-              Grow Together
-            </h2>
+          <div class="grow-txt laptop:p-4">
+            <h2 class="sub-heading">Grow Together</h2>
 
-            <p class="txt text-Grayish-Blue font-normal text-sm">
+            <p class="sect-txt">
               Generate meaningful discussions with your audience and build a
               strong,loyal community.Think of the insightful converstaions you
               miss out on with a feedback form.
@@ -89,21 +91,21 @@
       </div>
     </section>
 
-    <section class="conver-section py-10">
+    <section class="conver-section py-10 laptop:pb-28">
       <div class="cont max-w-7xl w-[95%] mx-auto">
-        <div class="conver text-center rounded-lg p-6">
-          <div class="img mb-14">
+        <div
+          class="conver text-center laptop:text-left rounded-lg p-6 max-w-sm mx-auto laptop:max-w-7xl laptop:flex laptop:items-center"
+        >
+          <div class="img mb-14 laptop:mb-0">
             <img
               src="images/illustration-flowing-conversation.svg"
               alt="Conversations"
             />
           </div>
-          <div class="conver-text">
-            <h2 class="conver-head text-Very-Dark-Cyan font-bold text-lg mb-4">
-              Flowing Conversations
-            </h2>
+          <div class="conver-text laptop:p-4">
+            <h2 class="sub-heading">Flowing Conversations</h2>
 
-            <p class="conver-text text-Grayish-Blue font-normal text-sm">
+            <p class="sect-txt">
               You wouldn't paginate a conversation in real life,so why do it
               online?Our threads have just-in-time loading for a more natural
               flow
@@ -115,17 +117,15 @@
 
     <section class="users-section pb-40">
       <div class="cont max-w-7xl w-[95%] mx-auto">
-        <div class="users text-center rounded-lg p-6">
-          <div class="img mb-14">
+        <div
+          class="users text-center laptop:text-left rounded-lg p-6 max-w-sm mx-auto laptop:max-w-7xl laptop:flex laptop:items-center"
+        >
+          <div class="img mb-14 laptop:mb-0 laptop:order-1">
             <img src="images/illustration-your-users.svg" alt="Users" />
           </div>
-          <div class="users-txt">
-            <h2
-              class="users-heading text-Very-Dark-Cyan font-bold text-lg mb-4"
-            >
-              Your Users
-            </h2>
-            <p class="txt text-Grayish-Blue font-normal text-sm">
+          <div class="users-txt laptop:p-4">
+            <h2 class="sub-heading">Your Users</h2>
+            <p class="sect-txt">
               It takes no time at all to intergrate Huddle with your app's
               authentication solution.This means,once signed in to your app,your
               users can start chatting immeddiately.
@@ -136,24 +136,34 @@
     </section>
     <footer class="footer bg-Very-Dark-Cyan relative">
       <div class="cont max-w-7xl w-[95%] mx-auto">
-        <div class="footer-cont relative pt-24 pb-10">
-          <div class="footer-banner bg-[#fff] py-7 px-5 text-center rounded-xl">
+        <div
+          class="footer-cont relative pt-24 pb-10 laptop:pb-1 max-w-sm mx-auto laptop:max-w-7xl"
+        >
+          <div
+            class="footer-banner bg-[#fff] py-7 px-5 text-center rounded-xl w-[95%] laptop:flex laptop:flex-col laptop:w-[50%]"
+          >
             <span
-              class="banner-head mb-10 inline-block text-Very-Dark-Cyan font-bold text-sm"
+              class="banner-head mb-10 laptop:inline-block text-Very-Dark-Cyan font-bold text-sm laptop:text-2xl block"
               >Ready To Build Your Community?</span
             >
 
             <a
               href="#"
-              class="btn btn-getstarted py-2 px-9 btn-getstarted bg-Pink text-[#fff] text-sm"
+              class="btn btn-getstarted py-2 px-9 btn-getstarted bg-Pink text-[#fff] text-sm laptop:inline-block laptop:w-[50%] laptop:mx-auto laptop:hover:opacity-80"
               >Get Started For Free</a
             >
           </div>
 
-          <div class="footer-details">
-            <div class="cont-1 mb-7">
+          <div
+            class="footer-details laptop:flex laptop:gap-10 laptop:items-center laptop:p-10"
+          >
+            <div class="cont-1 mb-7 laptop:mb-0 laptop:w-3/5">
               <div class="img mb-5">
-                <img src="images/logo.svg" alt="logo" class="footer-logo" />
+                <img
+                  src="images/footer-logo .svg"
+                  alt="logo"
+                  class="footer-logo h-6"
+                />
               </div>
               <ul>
                 <li class="mb-5 flex">
@@ -180,29 +190,35 @@
               </ul>
             </div>
 
-            <div class="cont-2">
+            <div class="cont-2 laptop:w-1/2">
               <ul>
                 <li class="mb-4 text-Very-Pale-Cyan">
-                  <a href="#">About Us</a>
+                  <a href="#" class="laptop:hover:border-b">About Us</a>
                 </li>
                 <li class="text-Very-Pale-Cyan mb-4">
-                  <a href="#">What We Do</a>
+                  <a href="#" class="laptop:hover:border-b">What We Do</a>
                 </li>
-                <li class="text-Very-Pale-Cyan mb-4"><a href="#">FAQ</a></li>
+                <li class="text-Very-Pale-Cyan mb-4">
+                  <a href="#" class="laptop:hover:border-b">FAQ</a>
+                </li>
               </ul>
             </div>
 
-            <div class="cont-3 mb-8">
+            <div class="cont-3 mb-8 laptop:mb-0 laptop:w-1/2">
               <ul>
-                <li class="text-Very-Pale-Cyan mb-4"><a href="#">Career</a></li>
-                <li class="text-Very-Pale-Cyan mb-4"><a href="#">Blog </a></li>
                 <li class="text-Very-Pale-Cyan mb-4">
-                  <a href="#">Contact Us</a>
+                  <a href="#" class="laptop:hover:border-b">Career</a>
+                </li>
+                <li class="text-Very-Pale-Cyan mb-4">
+                  <a href="#" class="laptop:hover:border-b">Blog </a>
+                </li>
+                <li class="text-Very-Pale-Cyan mb-4">
+                  <a href="#" class="laptop:hover:border-b">Contact Us</a>
                 </li>
               </ul>
             </div>
 
-            <div class="cont-4 text-center">
+            <div class="cont-4 text-center laptop:w-1/2">
               <ul class="flex justify-center mb-5">
                 <li class="mr-4">
                   <a href="#"
@@ -212,7 +228,7 @@
                       width="32"
                       height="32"
                       viewBox="0 0 32 32"
-                      class="footer-svg"
+                      class="footer-svg laptop:hover:fill-Pink laptop:hover:border-Pink laptop:hover:animate-pulse"
                     >
                       <title>facebook2</title>
                       <path
@@ -229,7 +245,7 @@
                       width="32"
                       height="32"
                       viewBox="0 0 32 32"
-                      class="footer-svg"
+                      class="footer-svg laptop:hover:fill-Pink laptop:hover:border-Pink laptop:hover:animate-pulse"
                     >
                       <title>twitter</title>
                       <path
@@ -246,7 +262,7 @@
                       width="32"
                       height="32"
                       viewBox="0 0 32 32"
-                      class="footer-svg"
+                      class="footer-svg laptop:hover:fill-Pink laptop:hover:border-Pink laptop:hover:animate-pulse"
                     >
                       <title>instagram</title>
                       <path
@@ -276,5 +292,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p> -->
     </footer>
+    <script src="js/smooth.js"></script>
   </body>
 </html>

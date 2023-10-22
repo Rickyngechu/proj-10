@@ -61,12 +61,21 @@ font-family: 'Poppins', sans-serif; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
+  /* Subheading for the sections */
+  .sub-heading {
+    @apply text-Very-Dark-Cyan font-bold text-lg mb-4 laptop:text-2xl;
+  }
+  /* Text for the sections */
+  .sect-txt {
+    @apply text-Grayish-Blue font-normal text-sm laptop:text-base;
+  }
+
   /* Footer banner */
   .footer-banner {
     position: absolute;
-    top: -12%;
-    /* top: 0; */
-    left: 0;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%);
 
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
       rgba(17, 17, 26, 0.1) 0px 0px 8px;
@@ -74,9 +83,17 @@ font-family: 'Poppins', sans-serif; */
 
   .footer-logo {
     color: #fff;
+    fill: #fff;
   }
 
+  /* Social media icons */
   .footer-svg {
     fill: #ffff;
+    border: 1px solid #fff;
+    padding: 0.5rem;
+    border-radius: 100%;
+  }
+
+  @media screen and (min-width: 900px) {
   }
 }
