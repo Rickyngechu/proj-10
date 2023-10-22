@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
 
 @layer base {
   *,
@@ -17,7 +20,7 @@
   }
 
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   img {
     max-width: 100%;
@@ -31,4 +34,49 @@
 }
 
 @layer components {
+  /* Styling the hero section */
+  .hero-section {
+    background-image: url(/images/bg-hero-mobile.svg);
+  }
+
+  .hero-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+
+  /* Box shadow for the navbtn */
+  .btn-nav {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .btn {
+    @apply px-6 py-1 rounded-3xl font-bold;
+  }
+
+  /* Styling the grow section */
+  .grow,
+  .conver,
+  .users {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  /* Footer banner */
+  .footer-banner {
+    position: absolute;
+    top: -12%;
+    /* top: 0; */
+    left: 0;
+
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  }
+
+  .footer-logo {
+    color: #fff;
+  }
+
+  .footer-svg {
+    fill: #ffff;
+  }
 }
